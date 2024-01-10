@@ -8,6 +8,9 @@
 get_header();
 ?>
     <main class="main book-genre">
+        <div class="back-btn">
+            <a href="<?php echo esc_url(home_url()); ?>"><= RECRUITMENT TASK</a>
+        </div>
         <section class="section-book-genre-header">
             <header class="book-genre-header">
                 <h1 class="page-title">
@@ -54,15 +57,17 @@ get_header();
                 <div class="book-genre-pagination">
                     <?php
                     echo paginate_links(array(
-                        'total'   => $query->max_num_pages,
+                        'total'   => $books_query->max_num_pages,
                         'current' => max(1, $paged),
+                        'prev_text' => __('<< Previous', 'textdomain'),
+                        'next_text' => __('Next >>', 'textdomain'),
                     ));
                     ?>
                 </div>
 
                 <?php wp_reset_postdata();
                 else :
-                    echo '<p>No books found for this genre.</p>';
+                    echo __('No books found for this genre', 'twentytwentychild');
                 endif;
                 ?>
             </div>

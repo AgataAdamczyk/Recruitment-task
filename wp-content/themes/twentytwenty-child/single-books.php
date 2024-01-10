@@ -9,15 +9,18 @@
 get_header();
 ?>
     <main class="main single-book">
+        <div class="back-btn">
+            <a href="<?php echo esc_url(home_url()); ?>"><= RECRUITMENT TASK</a>
+        </div>
         <!--   Task 5.1. - Crate two shortcodes:
         First one should return the title of most recent book.   -->
-        <section class="section-most-recent-book">
+        <section id="most-recent-book" class="section-most-recent-book">
             <div class="section-container">
                 <div class="most-recent-book">
                     <?php
                     echo '<h3 class="most-recent-book-title">';
                     echo __('Look at most recent book: ', 'twentytwentychild');
-                    echo '<a href="' . esc_url(get_permalink()) . '">' . do_shortcode('[recent_book_title]') . '</a>';
+                    echo do_shortcode('[recent_book_title]');
                     echo '</h3>';
                     ?>
                 </div>
@@ -76,7 +79,7 @@ get_header();
         Second one will return a list of 5 books from given Genre
         (user must be able to specify genre, lets assume its just term ID).
         Returned books should be sorted alphabetically.   -->
-        <section class="section-genre-list">
+        <section id="genre-list" class="section-genre-list">
             <div class="section-container">
                 <h4 class="genre-list-header">
                     <?php echo __('List of 5 books from fantasy genre:', 'twentytwentychild'); ?>
@@ -88,14 +91,12 @@ get_header();
         <!--   Task 6 - Create an AJAX callback returning 20 books in JSON format.
         JSON should only contain following fields: name, date, genre, excerpt.
         You can use scripts.js file created previously in Task 2 to make an AJAX call.   -->
-        <section class="section-ajax-list">
+        <section id="ajax-list" class="section-ajax-list">
             <div class="section-container">
                 <h4 class="ajax-list-header">
                     <?php echo __('20 books in JSON format (AJAX callback):', 'twentytwentychild'); ?>
                 </h4>
-                <div id="your-book-container">
-
-                </div>
+                <div id="your-book-container"></div>
             </div>
         </section>
     </main>

@@ -132,16 +132,21 @@ function recent_book_title_shortcode() {
         'order'          => 'DESC',
     );
 
-    $query = new WP_Query($args);
+    $recent_book_query = new WP_Query($args);
 
-    if ($query->have_posts()) {
-        $query->the_post();
+    if ($recent_book_query->have_posts()) {
+        $recent_book_query->the_post();
         $title = get_the_title();
-        wp_reset_postdata();
-        return $title;
-    }
+        $permalink = get_permalink();
 
-    return 'No recent books found.';
+        // Reset post data to avoid conflicts
+        wp_reset_postdata();
+
+        // Return the title as a link
+        return '<a href="' . esc_url($permalink) . '">' . esc_html($title) . '</a>';
+    } else {
+        return 'No recent books found';
+    }
 }
 
 add_shortcode('recent_book_title', 'recent_book_title_shortcode');
