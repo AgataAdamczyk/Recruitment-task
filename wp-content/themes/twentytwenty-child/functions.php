@@ -30,11 +30,12 @@ add_action('wp_enqueue_scripts', 'twentytwenty_child_enqueue_styles');
  */
 
 function twentytwenty_child_enqueue_scripts() {
-        // Enqueue scripts.js - true in the last parameter of wp_enqueue_script means the script will be loaded in the footer
-        wp_enqueue_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0', true);
+    // Enqueue scripts.js - true in the last parameter of wp_enqueue_script means the script will be loaded in the footer
+    wp_enqueue_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0', true);
 
-        // Pass the AJAX URL to script.js
-        wp_localize_script('custom-scripts', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+    // Pass the AJAX URL to script.js
+    wp_localize_script('custom-scripts', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+
 }
 
 add_action('wp_enqueue_scripts', 'twentytwenty_child_enqueue_scripts');
