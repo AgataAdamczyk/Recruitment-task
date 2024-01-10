@@ -6,7 +6,7 @@ This child theme is created to implement various customizations for a WordPress 
 
 A customer asks for some changes to his WordPress website which uses the default TwentyTwenty theme. Please prepare proper file structure and implement all the changes listed below:
 
-* Task 1
+[![Checkbox Icon](url_to_checkbox_icon)](url_to_linked_page) Task 1
 
 There are some styling changes required, and there is a high chance that there will be a lot more styling changes needed in the future. Where would you insert your custom CSS rules?
 
