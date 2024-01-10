@@ -3,14 +3,11 @@
 .grunt
 .history
 .vscode
-node_modules
 bower_components
 *.sublime-workspace
-sftp-config.json
 .DS_Store
 
 # FED
-package-lock.json
 /assets
 
 # Wordpress Core
@@ -36,9 +33,7 @@ wp-config.php
 
 # Themes whitelist
 !/wp-content/themes/twentytwenty-child
-
-# Custom theme excludes
-/wp-content/themes/twentytwenty-child/assets
+!/wp-content/themes/twentytwenty-child/assets
 
 # Other whitelist
 wp-content/cache/*
