@@ -1,6 +1,6 @@
 # Recruitment task
 
-This child theme is created to implement various customizations for a WordPress website using the default TwentyTwenty theme.
+See on [CodeLauralian](http://codelauralian.pl/).
 
 **Introduction**
 
