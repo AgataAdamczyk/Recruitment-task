@@ -9,6 +9,7 @@ A customer asks for some changes to his WordPress website which uses the default
 **Task 1** 
 
 There are some styling changes required, and there is a high chance that there will be a lot more styling changes needed in the future. Where would you insert your custom CSS rules?
+`wp-content/themes/twentytwenty-child/functions.php`
 
 **Task 2**
 
