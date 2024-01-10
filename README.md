@@ -1,6 +1,6 @@
 # Recruitment task
 
-See => [CodeLauralian](http://codelauralian.pl/).
+See => [Recruitment task](http://codelauralian.pl/).
 
 **Introduction**
 
