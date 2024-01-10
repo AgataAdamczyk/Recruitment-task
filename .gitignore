@@ -1,0 +1,46 @@
+# IDE
+.idea/
+.grunt
+.history
+.vscode
+node_modules
+bower_components
+*.sublime-workspace
+sftp-config.json
+.DS_Store
+
+# FED
+package-lock.json
+/assets
+
+# Wordpress Core
+wp-admin/
+wp-admin/*.php
+wp-includes/
+wp-includes/*.php
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+/readme.html
+/license.txt
+/*.php
+/wp-content/themes/*
+/wp-content/plugins/*
+/wp-content/ai1wm-backups/*
+/wp-content/index.php
+/wp-content/languages
+/wp-content/upgrade
+/wp-content/uploads
+
+# Themes whitelist
+!/wp-content/themes/twentytwenty-child
+
+# Custom theme excludes
+/wp-content/themes/twentytwenty-child/assets
+
+# Other whitelist
+wp-content/cache/*
+wp-content/wpo-cache/*
+wp-content/advanced-cache.php
