@@ -6,7 +6,6 @@
  * @subpackage TwentyTwentyChild
  */
 
-
 /**
  *  Task 1 - Add custom CSS rules (enqueue styles)
  */
@@ -19,7 +18,6 @@ function twentytwenty_child_enqueue_styles() {
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/assets/css/custom-styles.css', array('parent-style'));
 }
 
-// Hook the enqueue function into the wp_enqueue_scripts action
 add_action('wp_enqueue_scripts', 'twentytwenty_child_enqueue_styles');
 
 /**
@@ -233,10 +231,8 @@ function get_books_callback() {
 
     wp_reset_postdata();
 
-    // Return the JSON response
     wp_send_json($books_data);
 
-    // Always exit to prevent further execution
     exit;
 }
 
