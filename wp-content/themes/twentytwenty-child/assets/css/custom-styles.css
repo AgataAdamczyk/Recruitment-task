@@ -8,6 +8,7 @@
  *   2.3. Task 5.2. - Section list of 5 books from given genre
  *   2.4. Task 6 - AJAX callback
  * 3. Genre page (taxonomy)
+ * 4. Index with tasks - custom styles
  *
  */
 
@@ -15,7 +16,8 @@
  * 1. Custom global styles
  */
 #site-header,
-#site-footer {
+#site-footer,
+.back-btn {
     background-color: #F4F1E8;
     color: #9B4819;
 }
@@ -26,6 +28,22 @@
     width: 100%;
     max-width: 1060px;
     margin: 0 auto;
+}
+.search-toggle-wrapper,
+.powered-by-wordpress {
+    display: none;
+}
+.back-btn {
+    text-align: center;
+}
+.back-btn a {
+    font-size: medium;
+    font-weight: bold;
+    color: #BD8F53;
+    text-decoration: none;
+}
+.back-btn a:hover {
+    color: #9B4819;
 }
 
 /*
@@ -120,8 +138,13 @@
     color: #F4F1E8;
     text-decoration: none;
 }
-.genre-list-item a:hover {
+.genre-list-item a:hover,
+.book-genre-pagination a{
     color: #BD8F53;
+}
+.book-genre-pagination {
+    text-align: center;
+    font-size: medium;
 }
 
 /* 2.4. Task 6 - AJAX callback */
@@ -181,3 +204,27 @@
 .book-genre-list-item a:hover {
     color: #BD8F53;
 }
+
+/*
+ * 4. Index with tasks - custom styles
+ */
+.section-front-page {
+    background-color: #F4F1E8;
+    color: #191919;
+}
+.front-page-header,
+.task-item-response,
+.task-item-response a {
+    color: #9B4819;
+}
+.task-item-response a:hover,
+.task-item h4 {
+    color: #314028;
+}
+.task-item h4 {
+    margin-bottom: 1rem;
+}
+.task-item-response {
+    font-weight: bold;
+}
+
