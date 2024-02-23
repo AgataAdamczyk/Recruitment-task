@@ -1,6 +1,7 @@
 # Recruitment task
 
 See => [Recruitment task](http://codelauralian.pl/){:target="_blank"}
+<a href="http://codelauralian.pl/" target="_blank">Task</a>
 
 **Introduction**
 
