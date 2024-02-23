@@ -1,6 +1,6 @@
 # Recruitment task
 
-See => [Recruitment task](http://codelauralian.pl/){:target="_blank" rel="noopener"}.
+See => [Recruitment task](http://codelauralian.pl/){:target="_blank" rel="noopener"}
 
 **Introduction**
 
